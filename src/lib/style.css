@@ -11,11 +11,7 @@
 	--pink: hsl(341 92% 62%);
 
 	--gradient-gray: linear-gradient(white, #f0f1ff 40%);
-	--gradient-blue: linear-gradient(
-		135deg,
-		hsl(233 54% 16% / 0.95),
-		hsl(234 25% 52% / 0.9)
-	);
+	--gradient-blue: linear-gradient(135deg, hsl(233 54% 16% / 0.95), hsl(234 25% 52% / 0.9));
 	--gradient-pink: linear-gradient(hsl(13 100% 64%), hsl(322 87% 55%));
 	--gradient-purple: linear-gradient(hsl(237 100% 64%), hsl(322 87% 55%));
 }
@@ -152,7 +148,7 @@ button:hover,
 }
 
 .inner {
-	width: min(100% - 3rem, 70rem);
+	width: min(100% - 3rem, var(--lg));
 	margin-inline: auto;
 	padding-block: 3rem;
 }
