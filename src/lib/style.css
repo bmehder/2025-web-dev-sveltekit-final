@@ -1,0 +1,191 @@
+/* Google font */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+/* CSS Custom properties */
+:root {
+	--lg: 70rem;
+
+	--white: hsl(0, 0%, 100%);
+	--gray: hsl(232 10% 56%);
+	--blue: hsl(233 54% 16%);
+	--pink: hsl(341 92% 62%);
+
+	--gradient-gray: linear-gradient(white, #f0f1ff 40%);
+	--gradient-blue: linear-gradient(
+		135deg,
+		hsl(233 54% 16% / 0.95),
+		hsl(234 25% 52% / 0.9)
+	);
+	--gradient-pink: linear-gradient(hsl(13 100% 64%), hsl(322 87% 55%));
+	--gradient-purple: linear-gradient(hsl(237 100% 64%), hsl(322 87% 55%));
+}
+
+/* Color utility classes */
+.white {
+	color: var(--white);
+}
+
+.gray {
+	color: var(--gray);
+}
+
+.blue {
+	color: var(--blue);
+}
+
+.pink {
+	color: var(--pink);
+}
+
+.bg-white {
+	background-color: var(--white);
+}
+
+.bg-gray {
+	background-color: var(--gray);
+}
+
+.bg-blue {
+	background-color: var(--blue);
+}
+
+.bg-pink {
+	background-color: var(--pink);
+}
+
+.bg-gradient-gray {
+	background-image: var(--gradient-gray);
+}
+
+.bg-gradient-blue {
+	background-image: var(--gradient-blue);
+}
+
+.bg-gradient-pink {
+	background-image: var(--gradient-pink);
+}
+
+.bg-gradient-purple {
+	background-image: var(--gradient-purple);
+}
+
+/* Resets */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	/* outline: 1px solid red; */
+}
+
+img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+h1,
+h2,
+h3 {
+	text-wrap: balance;
+}
+
+p,
+li {
+	max-width: 65ch;
+	text-wrap: pretty;
+}
+
+/* Typography */
+body {
+	font-family: 'Plus Jakarta Sans', Arial, Helvetica, sans-serif;
+	font-weight: 500;
+	line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+	font-weight: 800;
+	line-height: 1.2;
+}
+
+h1 {
+	font-size: 2.5rem;
+}
+
+p,
+li {
+	color: var(--gray);
+}
+
+/* Links & Buttons */
+a {
+	color: var(--pink);
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+button,
+.button {
+	display: inline-block;
+	font-size: 1.125rem;
+	font-weight: 700;
+	line-height: inherit;
+	padding-block: 0.75rem;
+	padding-inline: 1.75rem;
+	border: none;
+	border-radius: 2rem;
+}
+
+button:hover,
+.button:hover {
+	outline: 3px solid white;
+	text-decoration: none;
+}
+
+/* Layouts */
+.flow > * + * {
+	margin-top: 1.5rem;
+}
+
+.inner {
+	width: min(100% - 3rem, 70rem);
+	margin-inline: auto;
+	padding-block: 3rem;
+}
+
+.auto-fit {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(min(16rem, 100%), 1fr));
+	gap: 3rem;
+}
+
+.spread-apart {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	gap: 1.5rem;
+}
+
+.columns {
+	column-width: 20rem;
+	gap: 3rem;
+}
+
+.float-left {
+	width: auto;
+	float: left;
+	margin-right: 3rem;
+	margin-bottom: 1.5rem;
+}
+
+.float-right {
+	width: auto;
+	float: right;
+	margin-left: 3rem;
+	margin-bottom: 1.5rem;
+}
