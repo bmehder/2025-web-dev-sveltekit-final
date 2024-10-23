@@ -46,11 +46,11 @@
 	.form-wrapper {
 		max-width: 48rem;
 		display: grid;
-		align-items: start;
 		gap: 1.5rem;
 
 		@media (width > 32rem) {
 			grid-template-columns: 1fr 1fr;
+			align-items: start;
 		}
 	}
 
