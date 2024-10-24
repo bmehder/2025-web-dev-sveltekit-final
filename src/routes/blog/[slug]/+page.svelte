@@ -18,15 +18,7 @@
 </section>
 
 <style>
-	img {
+	.post-content {
 		max-width: 65ch;
 	}
-
-	/* .post-content :global(h2) {
-		color: tomato;
-	}
-
-	.post-content :global(p) {
-		max-width: unset;
-	} */
 </style>
