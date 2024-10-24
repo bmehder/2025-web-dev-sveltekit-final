@@ -10,6 +10,7 @@
 				required
 			/>
 		</div>
+
 		<div class="form-item">
 			<label for="last">Last Name</label>
 			<input
@@ -20,6 +21,7 @@
 				required
 			/>
 		</div>
+
 		<div class="form-item">
 			<label for="email">Email</label>
 			<input
@@ -30,14 +32,17 @@
 				required
 			/>
 		</div>
+
 		<div class="form-item">
 			<label for="tel">Phone (Optional)</label>
 			<input type="tel" id="tel" name="tel" placeholder="Enter phone number..." />
 		</div>
+
 		<div class="form-item span-2">
 			<label for="message">Message</label>
 			<textarea name="message" id="message" rows="10"></textarea>
 		</div>
+
 		<button type="submit" class="bg-blue white">Submit Message</button>
 	</div>
 </form>

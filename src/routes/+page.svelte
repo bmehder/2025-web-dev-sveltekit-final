@@ -1,7 +1,7 @@
 <script>
 	import Box from '../lib/Box.svelte'
 	import HeadingBox from '../lib/HeadingBox.svelte'
-	import Hero from '../lib/Hero.svelte';
+	import Hero from '../lib/Hero.svelte'
 </script>
 
 <Hero />
