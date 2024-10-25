@@ -4,7 +4,7 @@
     <input
       {type}
       id="{name}"
-      name="{name}"
+      {name}
       {placeholder}
       required={isRequired}
     />
